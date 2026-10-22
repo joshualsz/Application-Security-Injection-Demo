@@ -27,14 +27,6 @@ python app.py
 Then open **http://127.0.0.1:5001**. No internet access is needed, and all the
 data is fake.
 
-Notes:
-- The app uses port **5001** because macOS AirPlay occupies port 5000. If you see
-  "Access denied / HTTP 403", you're likely on 5000 by mistake.
-- If the port is busy, an old copy is probably still running: `pkill -f app.py`,
-  then restart. To change the port, edit `port=5001` at the bottom of `app.py`.
-- `demo.db` is a SQLite database the app seeds on startup with a handful of fake
-  demo users.
-
 For the full live-demo script, talking points, and the exact payloads to paste,
 see [DEMO_RUN_SHEET.md](DEMO_RUN_SHEET.md).
 
